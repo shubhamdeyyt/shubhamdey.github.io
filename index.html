@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Dey - Video Editor</title>
+
+    <meta name="description" content="Shubham Dey – Professional Video Editor & YouTube Shorts Specialist. High-retention edits, reels & content creation.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --accent-1: #ff3366;
+            --accent-2: #00ffcc;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header { text-align: center; margin-bottom: 40px; }
+
+        .profile-image {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin: auto;
+            border: 4px solid var(--accent-1);
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(255,51,102,0.4);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 38px;
+            font-weight: 800;
+            margin-top: 15px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+
+        .subtitle {
+            font-family: 'Space Mono', monospace;
+            color: var(--accent-2);
+            font-size: 13px;
+            margin-top: 6px;
+            letter-spacing: 2px;
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 25px;
+            background: var(--card-bg);
+            padding: 18px;
+            border-radius: 14px;
+            border: 1px solid var(--card-border);
+        }
+
+        .stat-number {
+            color: var(--accent-1);
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        /* Links */
+        .links { display: flex; flex-direction: column; gap: 16px; margin-top: 40px; }
+
+        .link-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .link-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-1);
+            box-shadow: 0 10px 30px rgba(255,51,102,0.3);
+        }
+
+        .link-icon { font-size: 34px; }
+
+        .link-title { font-weight: 700; }
+
+        .link-description {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Section */
+        .section-title {
+            text-align: center;
+            margin: 50px 0 25px;
+            font-size: 26px;
+            font-weight: 800;
+        }
+
+        /* Services */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+            gap: 18px;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 22px;
+            text-align: center;
+        }
+
+        /* Portfolio */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 20px;
+        }
+
+        .video-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+        }
+
+        .video-thumbnail {
+            height: 180px;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .video-info { padding: 16px; }
+
+        /* Contact */
+        .contact {
+            margin-top: 50px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="profile-image">
+            <img src="https://yt3.googleusercontent.com/5G9cZoesnKeI0yCIB1j9eTpbLNEgONW5U_ltv3XCmVngfpgaeoV8xKtXMryeLiPKsqkyAQ4tvw=s160-c-k-c0x00ffffff-no-rj" alt="Shubham Dey">
+        </div>
+
+        <h1 class="name">Shubham Dey</h1>
+        <p class="tagline">High-Retention Video Editor</p>
+        <p class="subtitle">YOUTUBE SHORTS SPECIALIST</p>
+
+        <div class="stats">
+            <div>
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Edits</div>
+            </div>
+            <div>
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Subscribers</div>
+            </div>
+            <div>
+                <div class="stat-number">Freelance</div>
+                <div class="stat-label">Available</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="links">
+        <a class="link-card" href="https://youtube.com/@shubhamdeyyt" target="_blank">
+            <div class="link-icon">🎬</div>
+            <div>
+                <div class="link-title">YouTube Channel</div>
+                <div class="link-description">Watch my Shorts & edits</div>
+            </div>
+        </a>
+
+        <a class="link-card" href="https://www.instagram.com/shubhamdeyyt" target="_blank">
+            <div class="link-icon">📸</div>
+            <div>
+                <div class="link-title">Instagram</div>
+                <div class="link-description">Reels & behind the scenes</div>
+            </div>
+        </a>
+
+        <a class="link-card" href="https://wa.me/916207014323?text=Hi%20Shubham!%20I%20need%20a%20video%20editor%20for%20YouTube%20Shorts." target="_blank">
+            <div class="link-icon">💬</div>
+            <div>
+                <div class="link-title">Hire Me on WhatsApp</div>
+                <div class="link-description">Fast response • Professional work</div>
+            </div>
+        </a>
+    </div>
+
+    <!-- SERVICES -->
+    <h2 class="section-title">🎬 Services</h2>
+    <div class="services">
+        <div class="service-card">✂️ Shorts & Reels Editing</div>
+        <div class="service-card">🎨 Color Grading</div>
+        <div class="service-card">🎵 Audio Enhancement</div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact">
+        <h3>Let’s work together 🚀</h3>
+        <p>WhatsApp: +91 62070 14323</p>
+        <p>Location: Patna, India</p>
+    </div>
+
+    <div class="footer">
+        © 2026 Shubham Dey • All Rights Reserved
+    </div>
+
+</div>
+</body>
+</html>
